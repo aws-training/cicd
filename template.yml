@@ -63,13 +63,6 @@ Resources:
       ResourceId: !Ref ApiGatewayResourceCart
       RestApiId: !Ref ApiGatewayRestApi
 
-  ApiGatewayModel:
-    Type: AWS::ApiGateway::Model
-    Properties:
-      ContentType: 'application/json'
-      RestApiId: !Ref ApiGatewayRestApi
-      Schema: {}
-
   ApiGatewayStage:
     Type: AWS::ApiGateway::Stage
     Properties:
